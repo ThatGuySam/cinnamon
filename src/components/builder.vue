@@ -37,7 +37,7 @@ export default {
                 return wordSynomyms
             })
 
-            return synonyms.flat()
+            return new Set(synonyms.flat())
         },
 
         synonymsString() {
