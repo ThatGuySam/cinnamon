@@ -109,7 +109,7 @@ export default {
             <textarea
                 v-model="body"
                 type="text"
-                name="name"
+                rows="20"
                 class="block w-full border-0 p-0 placeholder-gray-500 focus:ring-0 sm:text-sm bg-transparent"
                 placeholder="Paste words here"
             />
@@ -122,7 +122,7 @@ export default {
             <textarea
                 :value="synonymsString"
                 type="text"
-                name="name"
+                rows="20"
                 class="block w-full border-0 p-0 placeholder-gray-500 focus:ring-0 sm:text-sm bg-transparent"
                 placeholder=""
                 readonly
