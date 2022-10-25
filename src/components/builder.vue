@@ -22,13 +22,15 @@ export default {
     },
     computed: {
         synonyms() {
-            const words = this.body.split(' ')
+            const words = this.body.replace(/[^a-zA-Z]/g, ' ').split(' ')
 
             const synonyms = words.map((word) => {
                 // Skip empty words
                 if (word === '') return []
 
-                const wordSynomyms = findSynonyms(word)
+                const cleanedWord = word.toLowerCase()
+
+                const wordSynomyms = findSynonyms(cleanedWord)
 
                 console.log({ wordSynomyms })
 
