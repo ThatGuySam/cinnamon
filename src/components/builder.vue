@@ -112,6 +112,7 @@ export default {
                 rows="20"
                 class="block w-full border-0 p-0 placeholder-gray-500 focus:ring-0 sm:text-sm bg-transparent"
                 placeholder="Paste words here"
+                @input="updateMessage('body', $event.target.value)"
             />
         </div>
 
