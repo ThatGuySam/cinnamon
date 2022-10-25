@@ -125,7 +125,7 @@ export default {
                 type="text"
                 rows="20"
                 class="block w-full border-0 p-0 placeholder-gray-500 focus:ring-0 sm:text-sm bg-transparent"
-                placeholder=""
+                placeholder="Synonyms will appear here"
                 readonly
             />
         </div>
